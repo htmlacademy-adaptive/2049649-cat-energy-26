@@ -7,8 +7,8 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo-image" src="#" alt="Интернет-магазин «Кэт энерджи»">
-        <img class="main-header__logo-title" src="#" alt="#">
+        <img class="main-header__logo-image" src="#" alt="Лого-магазина с бэт-котом">
+        <img class="main-header__logo-title" src="#" alt="Интернет-магазин «Кэт энерджи»">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -37,7 +37,7 @@
             <h1 class="product__title">Функциональное питание для котов</h1>
             <p class="product__slogan">Занялся собой? Займись котом!</p>
             <img class="product__image" src="#" alt="Функциональное питание для котов со вкусом курицы">
-            <button class="product__button" type="button">
+            <button class="product__button button-base" type="button">
               Подобрать программу
             </button>
           </header>
@@ -46,28 +46,28 @@
 
       <section class="program">
         <div class="program__wrapper">
-          <h3 class="program__title">Похудение</h3>
-          <p class="program__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
-            Пора на диету!
-            Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <button class="program__button" type="button">
-            Каталог slim
-          </button>
-        </div>
-      </section>
+          <div class="program-offer">
+            <h2 class="program-offer__title">Похудение</h2>
+            <p class="program-offer__description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+              Пора на диету!
+              Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="program-offer__link" href="#">
+              Каталог slim
+            </a>
+          </div>
 
-      <section class="program">
-        <div class="program__wrapper">
-          <h3 class="program__title">Набор массы</h3>
-          <p class="program__description">
-            Заработать авторитет среди дворовых котов и даже собак?
-            Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-          </p>
-          <button class="program__button" type="button">
-            Каталог pro
-          </button>
+          <div class="program-offer">
+            <h2 class="program-offer__title">Набор массы</h2>
+            <p class="program-offer__description">
+              Заработать авторитет среди дворовых котов и даже собак?
+              Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+            </p>
+            <a class="program-offer__link" href="#">
+              Каталог pro
+            </a>
+          </div>
         </div>
       </section>
 
@@ -135,8 +135,8 @@
           </dl>
         </div>
         <p class="example__subtitle">Затраты на питание: 15 000 РУБ.</p>
-        <img class="example__image-before" src="#" alt="Упитанный кот до функционального питания">
-        <img class="example__image-after" src="#" alt="Сбросивший вес кот после функционального питания">
+        <img class="example__image example__image-before" src="#" alt="Упитанный кот до функционального питания">
+        <img class="example__image example__image-after" src="#" alt="Сбросивший вес кот после функционального питания">
 
         <div class="range range__scale">
           <div class="range__bar">
@@ -196,6 +196,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
