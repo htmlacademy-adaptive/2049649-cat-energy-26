@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
@@ -7,8 +7,8 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="#" alt="Интернет-магазин «Кэт энерджи»">
-      <img class="main-header__logo-title" src="#" alt="#">
+      <img class="main-header__logo-image" src="#" alt="Лого-магазина с бэт-котом">
+      <img class="main-header__logo-title" src="#" alt="Интернет-магазин «Кэт энерджи»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -16,7 +16,7 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list menu-list">
-          <li class="main-nav__item menu-list__item--active">
+          <li class="main-nav__item main-nav__item--active">
             <a href="#">Главная</a>
           </li>
           <li class="main-nav__item">
@@ -31,8 +31,9 @@
   </header>
 
   <main class="main-form">
+    <h1 class="main-form__title">Подбор программы</h1>
+
     <section class="questionnaire questionnaire__wrapper">
-      <h1 class="questionnaire__title">Подбор программы</h1>
       <p class="questionnaire__description">
         Заполните анкету, и мы подберем
         программу питания для вашего кота</p>
@@ -58,25 +59,25 @@
 
         <div class="questionnaire__group">
           <label class="auth-filter-box">
-            <input class="auth-filter__radio-input" type="radio" name="product-group" value="slimming" checked>
+            <input class="auth-filter-box__radio-input" type="radio" name="product-group" value="slimming" checked>
 
-            <span class="auth-filter__text">Похудение</span>
+            <span class="auth-filter-box__text">Похудение</span>
           </label>
 
           <label class="auth-filter-box">
-            <input class="auth-filter__radio-input" type="radio" name="product-group" value="weight-gain">
+            <input class="auth-filter-box__radio-input" type="radio" name="product-group" value="weight-gain">
 
-            <span class="auth-filter__text">Набор массы</span>
+            <span class="auth-filter-box__text">Набор массы</span>
           </label>
 
           <label class="auth-filter-box">
-            <input class="auth-filter__radio-input" type="radio" name="product-group" value="dont-know">
+            <input class="auth-filter-box__radio-input" type="radio" name="product-group" value="dont-know">
 
-            <span class="auth-filter__text">Не знаю (Нужен ваш совет)</span>
+            <span class="auth-filter-box__text">Не знаю (Нужен ваш совет)</span>
           </label>
         </div>
 
-        <h2 class="auth-form__title">Контактные данные (владельца кота)</h2>
+        <h2 class="questionnaire__title">Контактные данные (владельца кота)</h2>
         <div class="questionnaire__group auth-form">
           <label class="auth-form__label" for="delivery-email">E-mail:*</label>
           <input class="auth-form__input" type="email" id="delivery-email" name="email"
@@ -95,30 +96,30 @@
                     rows="5">Расскажите обо всех повадках кота</textarea>
         </div>
 
-        <h2 class="auth-form__title">Дополнительно</h2>
+        <h2 class="questionnaire__title">Дополнительно</h2>
         <div class="questionnaire__group auth-filter-box">
           <label class="auth-filter-box__label">
             <input class="auth-filter-box__input" type="checkbox" name="sugar-substitute" checked>
 
-            <span class="auth-filter__text">Сахарозаменитель</span>
+            <span class="auth-filter-box__text">Сахарозаменитель</span>
           </label>
 
           <label class="auth-filter-box__label">
             <input class="auth-filter-box__input" type="checkbox" name="drinking-water">
 
-            <span class="auth-filter__text">Питьевая вода</span>
+            <span class="auth-filter-box__text">Питьевая вода</span>
           </label>
 
           <label class="auth-filter-box__label">
             <input class="auth-filter-box__input" type="checkbox" name="milk">
 
-            <span class="auth-filter__text">Молоко</span>
+            <span class="auth-filter-box__text">Молоко</span>
           </label>
 
           <label class="auth-filter-box__label">
             <input class="auth-filter-box__input" type="checkbox" name="vitamins">
 
-            <span class="auth-filter__text">Витамины</span>
+            <span class="auth-filter-box__text">Витамины</span>
           </label>
         </div>
 
@@ -131,14 +132,14 @@
   </main>
 
   <footer class="main-footer">
-    <div class="address__contacts contacts">
-      <b class="address__title">Приглашаем к сотрудничеству дилеров!</b>
-      <p class="address__text">
+    <div class="main-footer__contacts contacts">
+      <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+      <p class="contacts__text">
         ул. Большая
         Конюшенная, д. 19/8
         Санкт-Петербург
       </p>
-      <img class="address__map" src="#" alt="Яндекс-карта изображения улицы магазина «Кэт энерджи»">
+      <img class="contacts__map" src="#" alt="Яндекс-карта изображения улицы магазина «Кэт энерджи»">
     </div>
 
     <div class="main-footer__wrapper">
