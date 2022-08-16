@@ -135,28 +135,15 @@
         </dl>
       </div>
       <p class="example__subtitle">Затраты на питание: 15 000 РУБ.</p>
-      <img class="example__image example__image-before" src="#" alt="Упитанный кот до функционального питания">
-      <img class="example__image example__image-after" src="#" alt="Сбросивший вес кот после функционального питания">
 
-      <div class="range range__scale">
-        <div class="range__bar">
-          <button class="range__toggle toggle-min">
-            <span class="visually-hidden">До</span>
-          </button>
-          <button class="range__toggle toggle-max">
-            <span class="visually-hidden">После</span>
-          </button>
-        </div>
-
-        <div class="range__wrapper-inputs">
-          <label class="range__filter-label">
-            Было <input class="range__input" type="number" value="Было" name="min-range">
-          </label>
-          <label class="catalog-filter-label">
-            Стало <input class="range-input" type="number" value="Стало" name="max-range">
-          </label>
+      <div class="range">
+        <div class="range__scale">
+          <img class="range__image range__image-before" src="#" alt="Упитанный кот до функционального питания">
+          <img class="range__image range__image-after" src="#" alt="Сбросивший вес кот после функционального питания">
+          <input class="range__input" type="range" min="0" max="100" value="50" id="slider">
         </div>
       </div>
+
     </section>
   </main>
 
