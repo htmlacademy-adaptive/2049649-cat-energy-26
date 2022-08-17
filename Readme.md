@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Елизавета Неупокоева](https://up.htmlacademy.ru/adaptive/26/user/2049649).
-* Наставник: [Валя Видяева](https://htmlacademy.ru/profile/id189794).
+* Наставник: [Валя Видяева](https://htmlacademy.ru/profile/id189794). 
 
 ---
 
