@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="#" alt="Лого-магазина с бэт-котом">
-      <img class="main-header__logo-title" src="#" alt="Интернет-магазин «Кэт энерджи»">
+      <img class="main-header__logo-image" src="img/logo-img.svg" alt="Лого-магазина с бэт-котом">
+      <img class="main-header__logo-title" src="img/logo-title.svg" alt="Интернет-магазин «Кэт энерджи»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -17,13 +18,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list menu-list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__link" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -34,10 +35,10 @@
     <section class="product">
       <div class="product__wrapper">
         <header class="product__header">
-          <h1 class="product__title">Функциональное питание для котов</h1>
+          <h1 class="product__title main-title">Функциональное питание для котов</h1>
           <p class="product__slogan">Занялся собой? Займись котом!</p>
-          <img class="product__image" src="#" alt="Функциональное питание для котов со вкусом курицы">
-          <button class="product__button button-base" type="button">
+          <img class="product__image" src="img/product-main.png" width="280" height="270" alt="Функциональное питание для котов со вкусом курицы">
+          <button class="product__button button-base button-base--secondary" type="button">
             Подобрать программу
           </button>
         </header>
@@ -45,9 +46,9 @@
     </section>
 
     <section class="program">
-      <div class="program__wrapper">
-        <div class="program-offer">
-          <h2 class="program-offer__title">Похудение</h2>
+      <div class="program-offer">
+        <div class="program-offer__wrapper">
+          <h2 class="program-offer__title main-title main-title--size-s">Похудение</h2>
           <p class="program-offer__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету!
@@ -57,9 +58,11 @@
             Каталог slim
           </a>
         </div>
+      </div>
 
-        <div class="program-offer">
-          <h2 class="program-offer__title">Набор массы</h2>
+      <div class="program-offer">
+        <div class="program-offer__wrapper">
+          <h2 class="program-offer__title main-title main-title--size-s">Набор массы</h2>
           <p class="program-offer__description">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -73,7 +76,7 @@
 
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__title">Как это работает</h2>
+        <h2 class="advantages__title advantages__title--secondary pages-title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
             <p class="advantages__description">
@@ -108,8 +111,8 @@
 
     <section class="example">
       <div class="example__wrapper">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
+        <h2 class="example__title main-title">Живой пример</h2>
+        <p class="example-text__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
@@ -117,7 +120,7 @@
 
         <dl class="example__list">
           <div class="example__item">
-            <dt class="example__number">
+            <dt class="example__number main-heading">
               5 кг
             </dt>
             <dd class="example__description">
@@ -125,7 +128,7 @@
             </dd>
           </div>
           <div class="example__item">
-            <dt class="example__number">
+            <dt class="example__number main-heading">
               60 дней
             </dt>
             <dd class="example__description">
@@ -133,25 +136,26 @@
             </dd>
           </div>
         </dl>
-      </div>
-      <p class="example__subtitle">Затраты на питание: 15 000 РУБ.</p>
+        <p class="example__subtitle main-heading main-heading--size-s">Затраты на питание: 15 000 РУБ.</p>
 
-      <div class="range">
-        <div class="range__wrapper slider">
-          <img class="slider__image range__image-before" src="#" alt="Упитанный кот до функционального питания">
+        <div class="range">
+          <div class="range__wrapper slider">
+            <img class="slider__image range__image-before" src="img/example/cat-before.png" alt="Упитанный кот до функционального питания">
+          </div>
+          <div class="range__wrapper slider">
+            <img class="slider__image range__image-after" src="img/example/cat-after.png"
+                 alt="Сбросивший вес кот после функционального питания">
+          </div>
+          <button class="range__button" type="button"></button>
         </div>
-        <div class="range__wrapper slider">
-          <img class="slider__image range__image-after" src="#" alt="Сбросивший вес кот после функционального питания">
-        </div>
-        <button class="range__button" type="button"></button>
-      </div>
 
+      </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__contacts contacts">
-      <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+      <b class="contacts__title main-heading main-heading--size-m">Приглашаем к сотрудничеству дилеров!</b>
       <p class="contacts__text">
         ул. Большая
         Конюшенная, д. 19/8
@@ -163,7 +167,8 @@
     <div class="main-footer__wrapper">
 
       <a class="main-footer__logo">
-        <img class="main-footer__logo-title" src="#" alt="Интернет-магазин «Кэт энерджи»">
+        <img class="main-footer__logo-title" src="img/logo-title.svg" width="101" height="18"
+             alt="Интернет-магазин «Кэт энерджи»">
       </a>
 
       <div class="main-footer__social social">
@@ -181,6 +186,9 @@
       </div>
 
       <div class="main-footer__copyright copyright">
+        <a class="copyright__link-logo">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34">
+        </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>
