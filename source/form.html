@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="#" alt="Лого-магазина с бэт-котом">
-      <img class="main-header__logo-title" src="#" alt="Интернет-магазин «Кэт энерджи»">
+      <img class="main-header__logo-image" src="img/logo-img.svg" alt="Лого-магазина с бэт-котом">
+      <img class="main-header__logo-title" src="img/logo-title.svg" alt="Интернет-магазин «Кэт энерджи»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -17,13 +18,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list menu-list">
           <li class="main-nav__item main-nav__item--active">
-            <a href="#">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
+            <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -31,34 +32,36 @@
   </header>
 
   <main class="main-form">
-    <h1 class="main-form__title">Подбор программы</h1>
+    <h1 class="main-form__title main-title">Подбор программы</h1>
 
-    <section class="questionnaire">
-      <div class="questionnaire__wrapper">
-        <p class="questionnaire__description">
+    <section class="survey">
+      <div class="survey__wrapper">
+        <p class="survey__description main-heading main-heading--size-m">
           Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
 
-        <form class="questionnaire__form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="questionnaire__group field">
-            <label class="field__label" for="name">Имя:*</label>
-            <input class="field__input input-name" type="text" id="name" name="name" value="Барсик"
-                    placeholder="Введите имя питомца" required>
+        <form class="survey__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="survey__data-container">
+            <div class="survey__group field main-heading main-heading--size-m">
+              <label class="field__label" for="name">Имя:*</label>
+              <input class="field__input input-name main-heading main-heading--size-m" type="text" id="name" name="name"
+                      value="Барсик" placeholder="Введите имя питомца" required>
+            </div>
+
+            <div class="survey__group field main-heading main-heading--size-m">
+              <label class="field__label" for="weight">Вес (кг):*</label>
+              <input class="field__input input-name main-heading main-heading--size-m" type="number" id="weight"
+                      name="weight" value="7" placeholder="Введите вес питомца" required>
+            </div>
+
+            <div class="survey__group field main-heading main-heading--size-m">
+              <label class="field__label" for="age">Возраст (лет):</label>
+              <input class="field__input input-name main-heading main-heading--size-m" type="number" id="age" name="age"
+                      value="7" placeholder="Введите возраст питомца">
+            </div>
           </div>
 
-          <div class="questionnaire__group field">
-            <label class="field__label" for="weight">Вес (кг):*</label>
-            <input class="field__input input-name" type="number" id="weight" name="weight" value="7"
-                    placeholder="Введите вес питомца" required>
-          </div>
-
-          <div class="questionnaire__group field">
-            <label class="field__label" for="age">Возраст (лет):</label>
-            <input class="field__input input-name" type="number" id="age" name="age" value="7"
-                    placeholder="Введите возраст питомца">
-          </div>
-
-          <div class="questionnaire__group">
+          <div class="survey__radio-container main-heading main-heading--size-m">
             <label class="field-filter">
               <input class="field-filter__radio-input" type="radio" name="product-group" value="slimming" checked>
 
@@ -78,27 +81,30 @@
             </label>
           </div>
 
-          <h2 class="questionnaire__title">Контактные данные (владельца кота)</h2>
-          <div class="questionnaire__group field">
-            <label class="field__label" for="delivery-email">E-mail:*</label>
-            <input class="field__input" type="email" id="delivery-email" name="email"
-                    placeholder="Введите e-mail" value="kuklachev@gmail.com" required>
+          <h2 class="survey__title main-heading">Контактные данные (владельца кота)</h2>
+          <div class="survey__contacts-container">
+            <div class="survey__group field main-heading main-heading--size-m">
+              <label class="field__label" for="delivery-email">E-mail:*</label>
+              <input class="field__input main-heading main-heading--size-m" type="email" id="delivery-email"
+                      name="email"
+                      placeholder="Введите e-mail" value="kuklachev@gmail.com" required>
+            </div>
+
+            <div class="survey__group field main-heading main-heading--size-m">
+              <label class="field__label" for="phone">Телефон:*</label>
+              <input class="field__input main-heading main-heading--size-m" type="tel" id="phone" name="phone"
+                      placeholder="Введите номер телефона" value="8 (960) 900-60-90" required>
+            </div>
           </div>
 
-          <div class="questionnaire__group field">
-            <label class="field__label" for="phone">Телефон:*</label>
-            <input class="field__input" type="tel" id="phone" name="phone"
-                    placeholder="Введите номер телефона" value="8 (960) 900-60-90" required>
+          <div class="survey__comment-container field-comment">
+            <h2 class="field-comment__title main-heading">Комментарий</h2>
+            <textarea class="field-comment__text main-heading main-heading--size-m" name="comment" cols="31"
+                      rows="8">Расскажите обо всех повадках кота</textarea>
           </div>
 
-          <div class="questionnaire__group field-comment">
-            <h2 class="field-comment__title">Комментарий</h2>
-            <textarea class="field-comment__text" name="comment" cols="40"
-                      rows="5">Расскажите обо всех повадках кота</textarea>
-          </div>
-
-          <h2 class="questionnaire__title">Дополнительно</h2>
-          <div class="questionnaire__group field-filter">
+          <h2 class="survey__title main-heading">Дополнительно</h2>
+          <div class="survey__checkbox-container field-filter main-heading main-heading--size-m">
             <label class="field-filter__label">
               <input class="field-filter__input" type="checkbox" name="sugar-substitute" checked>
 
@@ -124,8 +130,8 @@
             </label>
           </div>
 
-          <button class="questionnaire__submit button-base" type="submit">Отправить заявку</button>
-          <small class="questionnaire__legend">
+          <button class="survey__submit button-base" type="submit">Отправить заявку</button>
+          <small class="survey__legend main-heading">
             * — Обязательные поля
           </small>
         </form>
@@ -134,8 +140,8 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__contacts contacts">
-      <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+    <div class="main-footer__contacts contacts contacts--secondary">
+      <b class="contacts__title main-heading main-heading--size-m">Приглашаем к сотрудничеству дилеров!</b>
       <p class="contacts__text">
         ул. Большая
         Конюшенная, д. 19/8
@@ -147,7 +153,8 @@
     <div class="main-footer__wrapper">
 
       <a class="main-footer__logo">
-        <img class="main-footer__logo-title" src="#" alt="Интернет-магазин «Кэт энерджи»">
+        <img class="main-footer__logo-title" src="img/logo-title.svg" width="101" height="18"
+              alt="Интернет-магазин «Кэт энерджи»">
       </a>
 
       <div class="main-footer__social social">
@@ -165,6 +172,9 @@
       </div>
 
       <div class="main-footer__copyright copyright">
+        <a class="copyright__link-logo">
+          <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34">
+        </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </div>

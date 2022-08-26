@@ -1,1 +1,62 @@
-// Начните писать стили здесь
+@import "blocks/button-base";
+@import "blocks/main-title";
+@import "blocks/main-heading";
+//Главная
+@import "blocks/blocks-index/main-nav";
+@import "blocks/blocks-index/product";
+@import "blocks/blocks-index/program";
+@import "blocks/blocks-index/advantages";
+@import "blocks/blocks-index/example";
+@import "blocks/blocks-index/main-footer";
+@import "blocks/blocks-index/contacts";
+@import "blocks/blocks-index/social";
+@import "blocks/blocks-index/copyright";
+//Форма
+@import "blocks/blocks-form/main-form";
+@import "blocks/blocks-form/survey";
+@import "blocks/blocks-form/field";
+@import "blocks/blocks-form/field-comment";
+//Каталог
+@import "blocks/blocks-catalog/main-catalog";
+@import "blocks/blocks-catalog/product-card";
+@import "blocks/blocks-catalog/card-more";
+@import "blocks/blocks-catalog/catalog";
+@import "blocks/blocks-catalog/card-additional";
+@import "blocks/blocks-catalog/additional-product-card";
+@import "blocks/blocks-catalog/special-gift";
+
+@special_dark-grey: #444444;
+@special_dark-grey-2: #222222;
+@color-black: #000000;
+@color-white: #ffffff;
+@background-green: rgba(104, 183, 56, 0.85);
+@color-green: #68B738;
+@color-grey: #F2F2F2;
+@special_little-dark-grey: #EAEAEA;
+@color_near-black: #111111;
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @special_dark-grey;
+}
