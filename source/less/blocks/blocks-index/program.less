@@ -1,10 +1,31 @@
+.program {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    min-width: 1220px;
+  }
+}
+
 .program-offer {
   background-color: @color-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 374px;
+    width: 570px;
+  }
 }
 
 .program-offer__wrapper {
   padding: 30px 0 22px 0;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .program-offer__title {

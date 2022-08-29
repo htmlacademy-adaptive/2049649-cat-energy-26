@@ -2,6 +2,13 @@
   padding-bottom: 32px;
 }
 
+.survey__inner {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .survey__description {
   color: @color-black;
   margin: 0;
@@ -15,15 +22,35 @@
 
 .survey__data-container {
   margin-bottom: 52px;
+
+  @media (min-width: @desktop-width) {
+    min-width: 570px;
+  }
 }
 
 .survey__radio-container {
+  display: flex;
+  flex-direction: column;
+
   color: @special_dark-grey-2;
   margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 630px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 570px;
+  }
 }
 
 .survey__contacts-container {
   margin-bottom: 24px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .survey__title {
@@ -38,6 +65,30 @@
 
 .survey__checkbox-container {
   margin-bottom: 34px;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    gap: 32px 123px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.survey__button-container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .survey__submit {

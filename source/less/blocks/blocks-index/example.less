@@ -4,6 +4,10 @@
 
 .example__wrapper {
   padding: 25px 0 40px 0;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
 }
 
 .example__title {
@@ -27,4 +31,30 @@
 .example__subtitle {
   text-align: center;
   text-transform: uppercase;
+  display: block;
+}
+
+.example__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin-right: auto;
+  }
+}
+
+.example__inner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
