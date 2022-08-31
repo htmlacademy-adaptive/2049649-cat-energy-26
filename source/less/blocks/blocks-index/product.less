@@ -1,12 +1,21 @@
 .product {
+  background-color: @background-green;
   font-family: "Oswald", sans-serif;
   color: @color-white;
 }
 
-.product__wrapper {
-  background-color: @background-green;
+.product__header {
   padding-top: 27px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 696px;
+  }
 }
 
 .product__title {
@@ -30,8 +39,16 @@
 
   text-decoration: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+  }
 }
 
 .product__image {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
 }

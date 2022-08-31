@@ -6,6 +6,20 @@
   }
 }
 
+.contacts__wrapper {
+  padding: 26px 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contacts__title {
   line-height: 20px;
   text-transform: uppercase;
@@ -13,5 +27,6 @@
 }
 
 .contacts__text {
+  margin: 0;
   line-height: 20px;
 }
