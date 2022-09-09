@@ -6,6 +6,19 @@
   }
 }
 
+.program_wrapper {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 71px;
+  }
+}
+
 .program-offer {
   background-color: @color-grey;
 
@@ -14,15 +27,27 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 374px;
     width: 570px;
   }
 }
 
 .program-offer__wrapper {
-  padding: 30px 0 22px 0;
+  padding: 30px 33px 18px 20px;
   margin-bottom: 20px;
 
+  @media (min-width: @tablet-width) {
+    padding: 77px 0 53px 52px;
+    width: 594px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 77px 51px 59px 52px;
+    width: 467px;
+    margin-bottom: 0;
+  }
+}
+
+.program-offer__wrapper:not(:last-child) {
   @media (min-width: @tablet-width) {
     margin-bottom: 30px;
   }
@@ -31,13 +56,33 @@
 .program-offer__title {
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 71px;
   padding: 0;
   color: @color-black;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .program-offer__description {
+  margin: 0;
   margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    width: 340px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 467px;
+    margin-bottom: 23px;
+  }
 }
 
 .program-offer__link {
@@ -51,6 +96,8 @@
   color: @color-black;
   display: block;
 
-  margin: 0;
-  padding: 0;
+  @media (min-width: @tablet-width) {
+    width: 165px;
+    text-align: start;
+  }
 }

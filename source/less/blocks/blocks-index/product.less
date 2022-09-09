@@ -2,19 +2,27 @@
   background-color: @background-green;
   font-family: "Oswald", sans-serif;
   color: @color-white;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @background-green;
+  }
 }
 
 .product__header {
   padding-top: 27px;
-  margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 696px;
+    flex-direction: row;
   }
 }
 
@@ -23,6 +31,16 @@
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+    color: @color-black;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 111px;
+  }
 }
 
 .product__slogan {
@@ -30,18 +48,39 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @color-black;
+    margin-bottom: 50px;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .product__button {
   display: inline-block;
   padding: 7px 44px;
   margin: 0;
+  margin-bottom: 20px;
 
   text-decoration: none;
   cursor: pointer;
+  width: 280px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: 244px;
+    padding: 14px 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 267px;
   }
 }
 

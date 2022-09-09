@@ -1,9 +1,17 @@
 .example {
   background-color: @special_little-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: @color-white;
+  }
 }
 
 .example__wrapper {
-  padding: 25px 0 40px 0;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 
   @media (min-width: @desktop-width) {
     width: 436px;
@@ -11,12 +19,19 @@
 }
 
 .example__title {
-  color: @color-black;
+  margin: 0;
   margin-bottom: 40px;
+  color: @color-black;
 }
 
 .example-text__description {
   margin-bottom: 35px;
+}
+
+.example__item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-right: 42px;
+  }
 }
 
 .example__number {
@@ -24,20 +39,58 @@
 }
 
 .example__description {
+  margin: 0;
   font-size: 12px;
+  line-height: 12px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__subtitle {
   text-align: center;
   text-transform: uppercase;
   display: block;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.example__subtitle br {
+  display: block;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .example__list {
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+
   @media (min-width: @tablet-width) {
     display: flex;
     margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
   }
 }
 

@@ -2,6 +2,7 @@
 @import "blocks/main-title";
 @import "blocks/main-heading";
 @import "blocks/container";
+@import "blocks/visually-hidden";
 //Главная
 @import "blocks/blocks-index/main-container";
 @import "blocks/blocks-index/main-header";
@@ -20,6 +21,8 @@
 @import "blocks/blocks-form/main-form";
 @import "blocks/blocks-form/survey";
 @import "blocks/blocks-form/field";
+@import "blocks/blocks-form/radio";
+@import "blocks/blocks-form/control";
 @import "blocks/blocks-form/field-comment";
 //Каталог
 @import "blocks/blocks-catalog/main-catalog";
@@ -36,10 +39,11 @@
 @color-black: #000000;
 @color-white: #ffffff;
 @background-green: rgba(104, 183, 56, 0.85);
-@color-green: #68B738;
-@color-grey: #F2F2F2;
-@special_little-dark-grey: #EAEAEA;
+@color-green: #68b738;
+@color-grey: #f2f2f2;
+@special_little-dark-grey: #eaeaea;
 @color_near-black: #111111;
+@border-color-grey: #e6e6e6;
 //Viewports
 @tablet-width: 768px;
 @desktop-width: 1440px;
@@ -78,4 +82,9 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: @special_dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -1,21 +1,40 @@
 .card-additional__wrapper {
-  margin-bottom: 54px;
-
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 86px;
   }
 }
 
 .card-additional__title {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 0;
+  }
 }
 
 .card-additional__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-transform: uppercase;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    margin: 0;
+  }
 }

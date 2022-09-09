@@ -1,0 +1,36 @@
+.control {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+
+  &:disabled {
+    opacity: 0.6;
+  }
+}
+
+.control__mark {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 0;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+  }
+}
+
+.control__text {
+  padding-left: 45px;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  position: absolute;
+  background-image: url("../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  z-index: 2;
+}
