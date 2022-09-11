@@ -30,18 +30,21 @@
   padding-top: 19px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
-    width: 250px;
     padding: 0;
-    margin: 0 auto;
     text-align: center;
     border: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 168px;
     text-align: center;
-    border: 0;
+  }
+}
+
+.catalog__item--show-all {
+  @media (min-width: @tablet-width) {
+    border: 2px solid @color-grey;
   }
 }

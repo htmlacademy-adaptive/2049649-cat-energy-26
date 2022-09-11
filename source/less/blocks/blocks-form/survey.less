@@ -1,3 +1,8 @@
+.survey {
+  position: relative;
+  overflow-x: hidden;
+}
+
 .survey__wrapper {
   padding-bottom: 32px;
 
@@ -89,29 +94,99 @@
 .survey__contacts-container {
   margin-bottom: 24px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 69px;
   }
 }
 
 .survey__title {
+  position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
 
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: 22px;
+      height: 2px;
+      width: 1000%;
+      background-color: @color-green;
+      z-index: 1;
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    height: 2px;
+    width: 1000%;
+    background-color: @color-green;
+    z-index: 1;
+    left: calc(100% + 40px);
+
+    @media (max-width: @mobile-width-only) {
+      left: calc(100% + -80px);
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .survey__title-extras {
+  position: relative;
+  display: inline-block;
   margin: 0;
   margin-bottom: 39px;
   padding: 0;
 
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: 22px;
+      height: 2px;
+      width: 1000%;
+      background-color: @color-green;
+      z-index: 1;
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    height: 2px;
+    width: 1000%;
+    background-color: @color-green;
+    z-index: 1;
+    left: calc(100% + 40px);
+
+    @media (max-width: @mobile-width-only) {
+      top: 16px;
+      left: calc(100% + 22px);
+    }
+  }
+
   @media (min-width: @tablet-width) {
     margin-bottom: 62px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 

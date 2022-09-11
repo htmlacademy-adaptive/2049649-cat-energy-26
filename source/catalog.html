@@ -8,7 +8,7 @@
 </head>
 <body class="page__body">
   <header class="main-header container">
-    <a class="main-header__logo">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo-img.svg" width="34" height="38" alt="Лого-магазина с бэт-котом">
       <img class="main-header__logo-title" src="img/logo-title.svg" width="101" height="18" alt="Интернет-магазин «Кэт энерджи»">
     </a>
@@ -32,9 +32,9 @@
     </nav>
   </header>
 
-  <main class="main-catalog main-container container">
-    <h1 class="main-catalog__title main-title main-title--secondary">Каталог продукции</h1>
-    <section class="catalog">
+  <main class="main-catalog main-container">
+    <section class="catalog container">
+      <h1 class="main-catalog__title main-title main-title--secondary">Каталог продукции</h1>
       <div class="catalog__wrapper">
         <ol class="catalog__list">
           <li class="catalog__item">
@@ -331,14 +331,14 @@
             <button class="product-card__button button-base" type="button">Заказать</button>
           </li>
 
-          <li class="catalog__item">
-            <div class="card-more card-more--show-all">
+          <li class="catalog__item catalog__item--show-all">
+            <div class="card-more">
               <h2 class="card-more__title card-more__title--offer main-heading main-heading--size-m">
                 Показать еще<br class="card-more__porting">
                 100500 товаров</h2>
 
               <p class="card-more__text">
-                На самом деле вкусов
+                На самом деле вкусов<br>
                 гораздо больше!</p>
 
               <button class="card-more__button button-base button-base--disabled" type="button">
@@ -351,11 +351,11 @@
     </section>
 
     <section class="card-additional">
-      <div>
-      <h2 class="card-additional__title main-heading">Дополнительные товары</h2>
+      <div class="container">
+        <h2 class="card-additional__title main-heading">Дополнительные товары</h2>
       </div>
 
-      <div class="card-additional__wrapper">
+      <div class="card-additional__wrapper container">
         <ul class="card-additional__list additional-product-card">
           <li class="additional-product-card__item">
             <div class="additional-product-card__inner">

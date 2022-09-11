@@ -30,6 +30,22 @@
   @media (min-width: @tablet-width) {
     flex-grow: 1;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus-within {
+    outline: 1px solid @special_dark-grey;
+  }
+
+  &:focus:invalid {
+    outline: 1px solid #ff8282;
+  }
 }
 
 .field__form--email {
@@ -45,7 +61,7 @@
 }
 
 .field__form--phone {
-  background: no-repeat 171px 13px url("/img/icons/phone.svg");
+  background: no-repeat 171px 13px url("../img/icons/phone.svg");
 
   @media (min-width: @tablet-width) {
     background: no-repeat 498px 16px url("../img/icons/phone.svg");

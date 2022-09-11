@@ -20,7 +20,62 @@
 }
 
 .program-offer {
+  position: relative;
   background-color: @color-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @color-green;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 24px;
+    left: 22px;
+
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: 446px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icons/cat-down.svg");
+    background-size: 36px 50px;
+    width: 36px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 21px;
+    left: 29px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 140px 194px;
+      width: 140px;
+      height: 194px;
+      top: 81px;
+      left: 476px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-size: 70px 97px;
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 67px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -28,6 +83,33 @@
 
   @media (min-width: @desktop-width) {
     width: 570px;
+  }
+}
+
+.program-offer--images {
+  &::after {
+    background-image: url("../img/icons/cat-up.svg");
+    background-size: 67px 28px;
+    width: 67px;
+    height: 28px;
+    top: 35px;
+    left: 12px;
+
+    @media (min-width: @tablet-width) {
+      background-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+      top: 135px;
+      left: 411px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-size: 134px 56px;
+      width: 134px;
+      height: 56px;
+      top: 67px;
+      left: 32px;
+    }
   }
 }
 
@@ -62,11 +144,13 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin-left: 0;
     margin-bottom: 24px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 73px;
+    margin-left: 162px;
   }
 }
 
@@ -90,14 +174,23 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  text-align: center;
+  width: 87px;
+  text-align: start;
   text-transform: uppercase;
   text-decoration: none;
   color: @color-black;
   display: block;
+  padding-right: 49px;
+
+  background-image: url("../img/icons/arrow-right.svg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 32px 12px;
 
   @media (min-width: @tablet-width) {
-    width: 165px;
-    text-align: start;
+    width: 108px;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 57px;
   }
 }

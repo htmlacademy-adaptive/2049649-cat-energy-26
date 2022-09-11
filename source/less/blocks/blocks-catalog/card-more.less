@@ -1,6 +1,16 @@
 .card-more {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 249px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+  }
+
   &::before {
     content: "";
     position: absolute;
