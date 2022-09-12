@@ -48,13 +48,21 @@
   border-top: 1px solid #cdcdcd;
 
   @media (min-width: @tablet-width) {
-    border: none;
+    border-top: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-top: 1px solid #cdcdcd;
   }
 }
 
 .additional-product-card__item:last-child {
   @media (min-width: @tablet-width) {
-    border: none;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
