@@ -1,9 +1,72 @@
 .field-comment__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 37px;
   padding: 0;
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      top: 22px;
+      height: 2px;
+      width: 1000%;
+      background-color: @color-green;
+      z-index: 1;
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    height: 2px;
+    width: 1000%;
+    background-color: @color-green;
+    z-index: 1;
+    left: calc(100% + 40px);
+
+    @media (max-width: @mobile-width-only) {
+      top: 15px;
+      left: calc(100% + 22px);
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .field-comment__text {
-  padding: 9px 15px 0 15px;
+  width: 280px;
+  min-height: 150px;
+  box-sizing: border-box;
+  padding: 9px 14px 0 14px;
+  border: 1px solid #e6e6e6;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus-within {
+    outline: 1px solid @special_dark-grey;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    min-height: 174px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }

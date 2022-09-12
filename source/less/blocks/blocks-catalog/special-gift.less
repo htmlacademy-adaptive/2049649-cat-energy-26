@@ -3,8 +3,18 @@
 }
 
 .special-gift__wrapper {
+  background: no-repeat 101px 58px url("../img/icons/gift.svg");
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 707px;
+    margin-bottom: 76px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 245px;
+    margin: 0;
+    background-position: 82px 55px;
   }
 }
 
@@ -16,5 +26,17 @@
   padding-top: 186px;
   padding-bottom: 43px;
   margin: 0;
-  margin-bottom: 35px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    padding-left: 422px;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    padding: 184px 42px 42px;
+  }
 }
