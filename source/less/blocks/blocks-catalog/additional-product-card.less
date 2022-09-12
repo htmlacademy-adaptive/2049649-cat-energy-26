@@ -46,6 +46,16 @@
 
 .additional-product-card__item:first-child {
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.additional-product-card__item:last-child {
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .additional-product-card__item {
