@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="main-header container">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="img/logo-img.svg" width="34" height="38" alt="Лого-магазина с бэт-котом">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="main-header__logo-image" src="img/logo-img.svg" width="34" height="38"
+              alt="Лого-магазина с бэт-котом">
+      </picture>
       <img class="main-header__logo-title" src="img/logo-title.svg" width="101" height="18" alt="Интернет-магазин «Кэт энерджи»">
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -19,13 +28,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list menu-list">
           <li class="menu-list__item menu-list__item--active">
-            <a class="menu-list__link" href="index.html">Главная</a>
+            <a class="menu-list__link menu-list__link-secondary" href="index.html">Главная</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="menu-list__link menu-list__link-secondary" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="form.html">Подбор программы</a>
+            <a class="menu-list__link menu-list__link-secondary" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -41,10 +50,17 @@
           <a class="product__button button-base button-base--secondary" href="form.html">
             Подобрать программу
           </a>
-        </div>
-        <div class="product__promo">
-          <img class="product__image" src="img/product-main.png" width="280" height="270"
-                alt="Функциональное питание для котов со вкусом курицы">
+          <div class="product__promo-img">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/promo/promo-product-desktop.png 1x,
+                    img/promo/promo-product-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/promo/promo-product-tablet.png 1x,
+                    img/promo/promo-product-tablet@2x.png 2x">
+              <img class="product__image" src="img/promo/promo-product.png" width="280" height="270"
+                    srcset="img/promo/promo-product@2x.png 2x"
+                    alt="Функциональное питание для котов со вкусом курицы">
+            </picture>
+          </div>
         </div>
       </header>
     </section>
@@ -156,14 +172,31 @@
         <div class="range">
           <div class="range_wrapper">
             <div class="range__container">
-              <img class="slider__image range__image-before" src="img/example/cat-before.png"
-                    alt="Упитанный кот до функционального питания">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/example/cat-before-tablet.png 1x,
+                img/example/cat-before-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/example/cat-before-tablet.png 1x,
+                img/example/cat-before-tablet@2x.png 2x">
+                <img class="range__slider range__image-before" src="img/example/cat-before.png"
+                      srcset="img/example/cat-before@2x.png 2x"
+                      width="280" height="256" alt="Упитанный кот до функционального питания">
+              </picture>
             </div>
+
             <div class="range__container">
-              <img class="slider__image range__image-after" src="img/example/cat-after.png"
-                    alt="Сбросивший вес кот после функционального питания">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/example/cat-after-tablet.png 1x,
+                img/example/cat-after-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/example/cat-after-tablet.png 1x,
+                img/example/cat-after-tablet@2x.png 2x">
+                <img class="range__slider range__image-after" src="img/example/cat-after.png"
+                      srcset="img/example/cat-after@2x.png 2x"
+                      width="280" height="256" alt="Упитанный кот до функционального питания">
+              </picture>
             </div>
-            <button class="range__button" type="button"></button>
+            <div class="range__toggle">
+              <button class="range__button" type="button"></button>
+            </div>
           </div>
         </div>
       </div>

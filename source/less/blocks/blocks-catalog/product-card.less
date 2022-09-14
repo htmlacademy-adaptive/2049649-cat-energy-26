@@ -105,14 +105,30 @@
 
 .product-card__image {
   display: block;
+  padding: 14px 36px 0;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     padding-bottom: 34px;
+    height: 172px;
+    width: 161px;
+    margin: 0 auto;
+    margin-top: -45px;
   }
 }
 
 .product-card__image--size {
+  padding: 11px 28px 0;
+
   @media (min-width: @tablet-width) {
-    padding-bottom: 27px;
+    padding: 0;
+    padding-bottom: 34px;
+    height: 206px;
+    width: 168px;
+    margin-top: -77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -81px;
   }
 }

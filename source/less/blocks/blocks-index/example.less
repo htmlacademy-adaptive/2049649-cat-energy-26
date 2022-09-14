@@ -11,10 +11,12 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
+    padding-bottom: 99px;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
+    padding: 0;
   }
 }
 
@@ -22,9 +24,18 @@
   margin: 0;
   margin-bottom: 40px;
   color: @color-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .example-text__description {
+  margin-top: 0;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
@@ -148,5 +159,6 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 75px;
   }
 }
