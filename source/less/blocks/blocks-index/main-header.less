@@ -36,6 +36,16 @@
 
 .main-header__logo-image {
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .main-header__logo-title {
@@ -44,5 +54,6 @@
 
   @media (min-width: @tablet-width) {
     padding-top: 20px;
+    display: none;
   }
 }
