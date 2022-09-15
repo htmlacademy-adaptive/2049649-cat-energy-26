@@ -59,10 +59,22 @@
   }
 }
 
+.advantages__item br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
 .advantages__description {
+  width: 200px;
   margin: 0;
   display: block;
-  width: 200px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 
 .advantages__item::after {
@@ -75,7 +87,7 @@
     color: @color-grey;
     z-index: -1;
     top: 130px;
-    left: 128px;
+    left: 120px;
   }
 }
 

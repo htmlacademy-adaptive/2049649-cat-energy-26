@@ -8,9 +8,11 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 72px;
+    padding-left: 80px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 0;
     padding-bottom: 82px;
   }
 }
@@ -194,7 +196,7 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 56px;
   }
 }
 
@@ -207,12 +209,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 221px 221px;
-    gap: 32px 123px;
-    margin-bottom: 59px;
+    gap: 20px 123px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
+    gap: 0;
     flex-direction: row;
     width: 1196px;
     justify-content: space-between;
@@ -221,8 +224,11 @@
 }
 
 .survey__button-container {
+  text-align: center;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    text-align: start;
   }
 
   @media (min-width: @desktop-width) {
@@ -240,6 +246,7 @@
     margin: 0;
     width: 282px;
     margin-right: 61px;
+    font-size: 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -253,4 +260,8 @@
   color: @color-black;
   line-height: 16px;
   text-align: center;
+}
+
+.survey__group-contacts {
+  position: relative;
 }

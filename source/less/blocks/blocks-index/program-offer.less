@@ -115,7 +115,7 @@
 
 .program-offer__wrapper {
   padding: 30px 33px 18px 20px;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     padding: 77px 0 53px 52px;
@@ -175,23 +175,55 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
-  width: 87px;
+  width: 132px;
   text-align: start;
   text-transform: uppercase;
   text-decoration: none;
   color: @color-black;
   display: block;
-  padding-right: 49px;
 
-  background-image: url("../img/icons/arrow-right.svg");
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 32px 12px;
+  //background-image: url("../img/icons/arrow-right.svg");
+  //background-position: right;
+  //background-repeat: no-repeat;
+  //background-size: 32px 12px;
 
   @media (min-width: @tablet-width) {
-    width: 108px;
+    width: 168px;
     font-size: 20px;
     line-height: 30px;
-    padding-right: 57px;
   }
+}
+
+.program-offer__icon {
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: 0.5s;
+  vertical-align: middle;
+}
+
+.program-offer__icon:hover {
+  transform: scaleX(1.4);
+}
+
+.program-offer__text {
+  padding-right: 17px;
+  vertical-align: middle;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+  }
+}
+
+.program-offer__text:hover + .program-offer__icon {
+  transform: scaleX(1.4);
+}
+
+.program-offer__text:active {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+
+.program-offer__text:active + .program-offer__icon {
+  transform: scaleX(1.4);
+  opacity: 0.3;
 }
