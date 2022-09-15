@@ -15,3 +15,34 @@
 .copyright__logo-image {
   display: block;
 }
+
+.copyright__icon {
+  vertical-align: middle;
+  color: #666666;
+
+  &:hover {
+    color: @color-green;
+  }
+
+  &:active {
+    color: @color-green;
+  }
+}
+
+.copyright__link:active {
+  opacity: 0.25;
+}
+
+.copyright__text:hover ~ .copyright__icon {
+  color: @color-green;
+}
+
+.copyright__text:active ~ .copyright__icon {
+  color: @color-green;
+}
+
+.copyright__text {
+  @media (min-width: @tablet-width) {
+    padding-right: 22px;
+  }
+}

@@ -48,7 +48,7 @@
 }
 
 .contacts__title {
-  line-height: 20px;
+  line-height: 26px;
   text-transform: uppercase;
   color: @color_near-black;
 }
@@ -56,4 +56,13 @@
 .contacts__text {
   margin: 0;
   line-height: 20px;
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
 }

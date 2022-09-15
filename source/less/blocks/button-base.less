@@ -21,4 +21,34 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.button-base:hover {
+  background-color: #5eaa2f;
+
+  border: #5eaa2f;
+}
+
+.button-base:active {
+  color: rgba(255, 255, 255, 0.25);
+  background-color: #5eaa2f;
+
+  border: #5eaa2f;
+}
+
+.button-base--disabled:hover {
+  color: @special_dark-grey;
+  background-color: #ebebeb;
+  border: #ebebeb;
+}
+
+.button-base--disabled:active {
+  color: rgba(68, 68, 68, 0.25);
+  background-color: #ebebeb;
+  border: #ebebeb;
 }
