@@ -5,7 +5,15 @@
   font-weight: 400;
   text-decoration: none;
   color: @special_dark-grey;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+    display: block;
+  }
 }
 
 .copyright__link-logo {

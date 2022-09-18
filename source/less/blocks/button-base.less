@@ -1,5 +1,7 @@
 .button-base {
   font-family: "Oswald", sans-serif;
+  display: block;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -9,7 +11,7 @@
   border: @color-green;
   text-align: center;
   text-transform: uppercase;
-  display: block;
+  text-decoration: none;
 
   &--disabled {
     color: @special_dark-grey;
@@ -34,6 +36,10 @@
   border: #5eaa2f;
 }
 
+//.button-base:focus {
+//  outline: 2px solid #5eaa2f;
+//}
+
 .button-base:active {
   color: rgba(255, 255, 255, 0.25);
   background-color: #5eaa2f;
@@ -46,6 +52,10 @@
   background-color: #ebebeb;
   border: #ebebeb;
 }
+
+//.button-base--disabled:focus {
+//  outline: 2px solid @special_dark-grey;
+//}
 
 .button-base--disabled:active {
   color: rgba(68, 68, 68, 0.25);

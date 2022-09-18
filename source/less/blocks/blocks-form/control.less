@@ -44,6 +44,22 @@
   z-index: 2;
 }
 
+.control__input:focus + .control__mark::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  outline: 2px solid #bababa;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .control__input:focus ~ .control__mark {
   border-color: #bababa;
 }
