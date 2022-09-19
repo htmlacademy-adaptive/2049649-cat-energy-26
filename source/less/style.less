@@ -1,37 +1,39 @@
+@import "blocks/fonts";
 @import "blocks/button-base";
 @import "blocks/main-title";
 @import "blocks/main-heading";
 @import "blocks/container";
 @import "blocks/visually-hidden";
 //Главная
-@import "blocks/blocks-index/main-container";
-@import "blocks/blocks-index/main-header";
-@import "blocks/blocks-index/main-nav";
-@import "blocks/blocks-index/menu-list";
-@import "blocks/blocks-index/product";
-@import "blocks/blocks-index/program-offer";
-@import "blocks/blocks-index/advantages";
-@import "blocks/blocks-index/example";
-@import "blocks/blocks-index/range";
-@import "blocks/blocks-index/main-footer";
-@import "blocks/blocks-index/contacts";
-@import "blocks/blocks-index/social";
-@import "blocks/blocks-index/copyright";
+@import "blocks/main-container";
+@import "blocks/main-header";
+@import "blocks/main-nav";
+@import "blocks/menu-list";
+@import "blocks/product";
+@import "blocks/program";
+@import "blocks/program-offer";
+@import "blocks/advantages";
+@import "blocks/example";
+@import "blocks/range";
+@import "blocks/main-footer";
+@import "blocks/contacts";
+@import "blocks/social";
+@import "blocks/copyright";
 //Форма
-@import "blocks/blocks-form/main-form";
-@import "blocks/blocks-form/survey";
-@import "blocks/blocks-form/field";
-@import "blocks/blocks-form/radio";
-@import "blocks/blocks-form/control";
-@import "blocks/blocks-form/field-comment";
+@import "blocks/main-form";
+@import "blocks/survey";
+@import "blocks/field";
+@import "blocks/radio";
+@import "blocks/control";
+@import "blocks/field-comment";
 //Каталог
-@import "blocks/blocks-catalog/main-catalog";
-@import "blocks/blocks-catalog/product-card";
-@import "blocks/blocks-catalog/card-more";
-@import "blocks/blocks-catalog/catalog";
-@import "blocks/blocks-catalog/card-additional";
-@import "blocks/blocks-catalog/additional-product-card";
-@import "blocks/blocks-catalog/special-gift";
+@import "blocks/main-catalog";
+@import "blocks/product-card";
+@import "blocks/card-more";
+@import "blocks/catalog";
+@import "blocks/card-additional";
+@import "blocks/additional-product-card";
+@import "blocks/special-gift";
 
 //Цвет
 @special_dark-grey: #444444;
@@ -49,24 +51,6 @@
 @tablet-width: 768px;
 @desktop-width: 1440px;
 @mobile-width-only: 767px;
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswaldregular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswaldmedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 
 html {
   height: 100%;

@@ -1,11 +1,10 @@
 .field {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 280px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    align-items: center;
     width: 630px;
   }
 
@@ -33,6 +32,7 @@
 
   @media (min-width: @tablet-width) {
     flex-grow: 1;
+    padding: 13px 27px;
   }
 
   &:focus {

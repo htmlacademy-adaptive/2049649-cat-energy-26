@@ -62,6 +62,22 @@
   }
 }
 
+.radio__input:focus + .radio__mark::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  outline: 2px solid #bababa;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .radio__input:focus ~ .radio__mark {
   border-color: #bababa;
 }
@@ -77,4 +93,15 @@
 
 .radio__input:disabled ~ .radio__text {
   opacity: 0.3;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.field-comment__text {
+  resize: none;
 }
