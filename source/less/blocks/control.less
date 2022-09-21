@@ -8,7 +8,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 221px;
+    padding-left: 60px;
+    width: 160px;
   }
 }
 
@@ -28,14 +29,6 @@
   }
 }
 
-.control__text {
-  padding-left: 45px;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 54px;
-  }
-}
-
 .control__input[type="checkbox"]:checked + .control__mark {
   position: absolute;
   background-image: url("../img/tick.svg");
@@ -44,7 +37,7 @@
   z-index: 2;
 }
 
-.control__input:focus + .control__mark::before {
+.control__input:focus-visible + .control__mark::before {
   content: "";
   position: absolute;
   top: -1px;
