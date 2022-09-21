@@ -49,7 +49,7 @@
 
     <section class="survey">
       <div class="survey__wrapper container">
-        <p class="survey__description main-heading main-heading--size-m">
+        <p class="survey__description main-heading">
           Заполните анкету, и мы подберем<br>
           программу питания для вашего кота</p>
 
@@ -128,8 +128,9 @@
 
           <div class="survey__comment-container field-comment">
             <h2 class="field-comment__title main-heading">Комментарий</h2>
-            <textarea class="field-comment__text main-heading main-heading--size-m" name="comment" cols="31"
-                      rows="4">Расскажите обо всех повадках кота</textarea>
+            <label class="field-comment__label" for="comment"></label>
+            <textarea class="field-comment__text main-heading main-heading--size-m" id="comment"
+                      name="comment" cols="31" rows="4">Расскажите обо всех повадках кота</textarea>
           </div>
 
           <h2 class="survey__title-extras main-heading">Дополнительно</h2>
@@ -212,25 +213,25 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <svg class="social__icon" aria-label="Перейти в группу Вконтакте" aria-hidden="true" focusable="false"
-                      width="28" height="22" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--vkontakte" aria-label="Перейти в группу Вконтакте" aria-hidden="true"
+                  href="https://vk.com/htmlacademy">
+                <svg class="social__icon" width="28" height="22" xmlns="http://www.w3.org/2000/svg" focusable="false" >
                   <use href="img/sprite.svg#vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru">
-                <svg class="social__icon" aria-label="Перейти на канал в Ютубе" aria-hidden="true" focusable="false"
-                      width="28" height="22" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--youtube" aria-label="Перейти на канал в Ютубе" aria-hidden="true"
+                  href="https://www.youtube.com/htmlacademyru">
+                <svg class="social__icon" focusable="false" width="28" height="22" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <svg class="social__icon" aria-label="Перейти на канал в Телеграме" aria-hidden="true" focusable="false"
-                      width="28" height="22" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--telegram" aria-label="Перейти на канал в Телеграме"
+                  aria-hidden="true" href="https://t.me/htmlacademy">
+                <svg class="social__icon" width="28" height="22" focusable="false" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#telegram"></use>
                 </svg>
               </a>
@@ -239,10 +240,10 @@
         </div>
 
         <div class="main-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" aria-label="Перейти на сайт HTML Academy" aria-hidden="true"
+              href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__icon" aria-label="Перейти на сайт HTML Academy" aria-hidden="true" focusable="false"
-                  width="27" height="34" xmlns="http://www.w3.org/2000/svg">
+            <svg class="copyright__icon" width="27" height="34" focusable="false" xmlns="http://www.w3.org/2000/svg">
               <use href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
