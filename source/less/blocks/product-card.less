@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     width: 248px;
+    height: 100%;
     margin: 0 auto;
     justify-content: center;
   }
@@ -26,11 +27,7 @@
   width: 140px;
 
   @media (min-width: @tablet-width) {
-    width: 250px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 169px;
+    width: 100%;
   }
 }
 
@@ -96,7 +93,7 @@
   }
 }
 
-.product-card__item:nth-child(3n) {
+.product-card__item:last-child {
   margin: 0;
 }
 
